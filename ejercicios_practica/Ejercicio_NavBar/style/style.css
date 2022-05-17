@@ -1,0 +1,46 @@
+:root{
+    --color-menu: rgb(13, 17, 23);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img{
+    width: 24px;
+}
+
+.profile{
+    width: 35px;
+}
+
+nav{
+    
+    background-color: var(--color-menu);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.int{
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: all ease-out 100ms;
+}
+
+.int.ani1:hover{
+    border-bottom: 2px solid rgb(161, 36, 36);
+    padding-top: 0;
+}
+
+.int.ani2:hover .int{
+    transform: translate(-10px,10px);
+}
+
